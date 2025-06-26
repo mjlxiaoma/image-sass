@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
-    content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    content: ["./src/**/*.{js,ts,jsx,tsx}"],
+    prefix: "",
     theme: {
       extend: {
+        fontFamily: {
+          sans: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+        },
         colors: {
           border: "hsl(var(--border))",
           input: "hsl(var(--input))",
